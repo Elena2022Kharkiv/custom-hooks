@@ -1,0 +1,24 @@
+.catalog__icons {
+    display: flex;
+    width: 30px;
+    flex-wrap: wrap;
+}
+
+.catalog__icon {
+    height: 10px;
+    width: 10px;
+    margin: 1px;
+    border-radius: 30%;
+}
+
+.icon-white {
+    border: 2px solid white;
+}
+
+.icon-black {
+    border: 2px solid black;
+}
+
+.icon {
+    transform: rotate(45deg);
+}

@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  align-items: center;
+  background: #000000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo__img{
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logoBig {
+  font-size: 30px;
+}
+
+.burgerMenu-btn img {
+  height: 40px;
+  margin-left: 20px;
+}
+
+.burgerMenu-btn:hover,
+.language__UA:hover,
+.header__offers:hover,
+.header__basket:hover {
+  cursor: pointer;
+}
+
+.catalog {
+  background-color: rgba(255, 255, 255, 0.303);
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+.catalog:hover {
+  background-color: rgba(255, 255, 255, 0.416);
+  cursor: pointer;
+}
+
+.catalog__name {
+  color: white;
+  font-size: 16px;
+}
+
+.catalog-menu  {
+  padding-top: 10px;
+}
+.catalog-menu img {
+  display: block;
+  height: 600px;
+  margin: 70px auto;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 0 20px 0 auto;
+}
+
+.language img,
+.header__offers img {
+  height: 30px;
+}
+
+.header__basket img {
+  height: 30px;
+  margin: 0 20px;
+}
+
+.active {
+  background-color: rgba(69, 68, 68, 0.552);
+}
