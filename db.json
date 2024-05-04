@@ -45,67 +45,19 @@
     {
       "id": "8",
       "title": "Product8",
-      "price": 370,
+      "price": 400,
       "category": 2
     },
     {
       "id": "9",
       "title": "Product9",
-      "price": 400,
+      "price": 450,
       "category": 1
     },
     {
       "id": "10",
       "title": "Product10",
-      "price": 450,
-      "category": 1
-    },
-    {
-      "id": "11",
-      "title": "Product11",
-      "price": 470,
-      "category": 2
-    },
-    {
-      "id": "12",
-      "title": "Product12",
       "price": 500,
-      "category": 2
-    },
-    {
-      "id": "13",
-      "title": "Product13",
-      "price": 530,
-      "category": 1
-    },
-    {
-      "id": "14",
-      "title": "Product14",
-      "price": 550,
-      "category": 2
-    },
-    {
-      "id": "15",
-      "title": "Product15",
-      "price": 600,
-      "category": 1
-    },
-    {
-      "id": "16",
-      "title": "Product16",
-      "price": 620,
-      "category": 1
-    },
-    {
-      "id": "17",
-      "title": "Product17",
-      "price": 650,
-      "category": 2
-    },
-    {
-      "id": "18",
-      "title": "Product18",
-      "price": 700,
       "category": 1
     }
   ],

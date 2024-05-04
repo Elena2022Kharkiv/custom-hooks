@@ -1,27 +1,19 @@
 import { useState, useEffect } from "react";
 
-// если данные есть, то получить их,
-// если данных нет - то записать данные
+export const useLocalStorage = (key, initialValue) => {
 
-export const useLocalStorage = (initialValue, key) => {
-    // initialValue - если LocalStorage пустой
-
-    const getDataLocalStorage = () => {
-
-        let data = localStorage.getItem(key); // data ? Null
-
-        if(data) {
-            return JSON.parse(data); // data
-        } else {
-            return initialValue; //  если LocalStorage пустой
-        }
-    }
-
-    const [dataLocalStorage, setDataLocalStorage] = useState(getDataLocalStorage);
-
-    // useEffect(() => {
-    //     localStorage.setItem(key, JSON.stringify(dataLocalStorage));
-    // }, [dataLocalStorage]);
-
-    return { dataLocalStorage, setDataLocalStorage };
-}
+    const [ dataLocalStorage, setDataLocalStorage ] = useState(() => {
+      const data = localStorage.getItem(key);
+      console.log(data);  
+      return (data) ? JSON.parse(data) : initialValue;
+    });
+    
+    console.log(dataLocalStorage);
+  
+    useEffect(() => {
+        localStorage.setItem(key, JSON.stringify(dataLocalStorage));
+    }, [key, dataLocalStorage]);
+  
+    return [ dataLocalStorage, setDataLocalStorage ] ;
+  }
+  

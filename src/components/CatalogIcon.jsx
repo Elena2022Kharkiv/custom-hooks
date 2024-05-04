@@ -1,4 +1,4 @@
-import "./CatalogIcon.css";
+import "./../scss/CatalogIcon.scss";
 
 const CatalogIcon = (props) => {
 

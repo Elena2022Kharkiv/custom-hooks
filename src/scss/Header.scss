@@ -3,6 +3,7 @@
   align-items: center;
   background: #000000;
   width: 100%;
+  // position: relative;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,11 +15,10 @@
   color: white;
   font-weight: bold;  
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.logo__img{
-  height: 40px;
-  margin-right: 10px;
+  &__img {
+    height: 40px;
+    margin-right: 10px;  
+  }
 }
 
 .logoBig {
@@ -44,25 +44,14 @@
   margin: 0 30px;
   padding: 8px 15px;
   border-radius: 8px;
-}
-
-.catalog:hover {
-  background-color: rgba(255, 255, 255, 0.416);
-  cursor: pointer;
-}
-
-.catalog__name {
-  color: white;
-  font-size: 16px;
-}
-
-.catalog-menu  {
-  padding-top: 10px;
-}
-.catalog-menu img {
-  display: block;
-  height: 600px;
-  margin: 70px auto;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.416);
+    cursor: pointer;  
+  }
+  &__name {
+    color: white;
+    font-size: 16px;
+  }
 }
 
 .language {
@@ -80,8 +69,4 @@
 .header__basket img {
   height: 30px;
   margin: 0 20px;
-}
-
-.active {
-  background-color: rgba(69, 68, 68, 0.552);
 }

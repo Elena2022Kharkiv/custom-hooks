@@ -1,9 +1,10 @@
-export const getProducts = async () => {
-    const url = 'http://localhost:5000/products';
-  
-    const response = await fetch(url);      
-    const products = await response.json();
-    console.log(products);
+export const getProducts = async (category) => {
+  const catProd = (category !== 3) ? `?category=${category}` : '';
 
-    return products;
-  }
+  const urlProducts = `http://localhost:3000/products${catProd}`;
+
+  const response = await fetch(urlProducts);      
+  const products = await response.json();
+
+  return products;
+}

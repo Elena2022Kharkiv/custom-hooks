@@ -8,7 +8,7 @@ import AppStoreImg from "./../../img/img-app-store.png";
 import GoogleImg from "./../../img/img-google.png";
 import BasketImg from "./../../img/basket.png";
 import CloseImg from "./../../img/close.png";
-import "./BurgerMenu.css";
+import "./../../scss/BurgerMenu.scss";
 
 const BurgerMenu = (props) => {
     const { isShowMenu, toggleMenu } = props;
@@ -38,7 +38,7 @@ const BurgerMenu = (props) => {
                 <div className="burgerMenu__catalog-icon"> 
                     <CatalogIcon type="burgerMenu"/>
                 </div>    
-                <p>Каталог товарів</p>
+                <div className="burgerMenu__catalog-name">Каталог товарів</div>
             </div>
 
             <MenuItems menuItems={burgerMenuItems} />

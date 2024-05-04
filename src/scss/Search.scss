@@ -1,0 +1,32 @@
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    &__text {
+        display: flex;
+        background: white;
+        height: 40px;
+        border-radius: 5px 0 0 5px;
+    }
+    &__btn {
+        background-color: #00a046;
+        border-radius: 0 5px 5px 0;
+        height: 40px;
+        padding: 0 10px;
+        color: white;
+        font-size: 16px;
+        border: none;        
+    }
+    &__microphone:hover {
+        cursor: pointer;
+    }
+    & img {
+        height: 20px;
+        margin: 10px;
+    }
+    & input {
+        width: 300px;
+        border: none;
+        outline: none;
+    }
+}

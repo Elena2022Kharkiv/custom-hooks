@@ -7,7 +7,6 @@ const BurgerMenuItems = (props) => {
             {
                 array.map((item, index) =>
                     <li className={`${nameClass}__item`} key={ index }>
-                        {/* <a href={ item.link }>{ item.name }</a> */}
                         <p>{ item.name }</p>
                     </li>
                 )

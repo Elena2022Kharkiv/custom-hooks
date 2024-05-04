@@ -1,6 +1,6 @@
 import SearchImg from "./../img/search_icon.png";
 import Microphone from "./../img/microphone_icon.png";
-import "./Search.css";
+import "./../scss/Search.scss";
 
 const Search = () => {
 

@@ -4,15 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-}
-
-.container {
-  margin: 0 auto;
-  height: 100vh;
-}
-
 li {
   list-style: none;
 }
@@ -20,3 +11,4 @@ li {
 a {
   text-decoration: none;
 }
+

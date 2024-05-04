@@ -1,3 +1,4 @@
+import "./../scss/Header.scss";
 import Logo from "./Logo";
 import BtnMenu from "./../img/button-menu.png";
 import Search from "./Search";
@@ -7,18 +8,7 @@ import BasketImg from "./../img/basket-icon.png";
 import CatalogIcon from "./CatalogIcon";
 
 const Header = (props) => {
-    const { toggleMenu, setShowCatalog, setShowBasket, setToggleActive } = props;
-
-    const showBasketHandler = () => {
-        setShowBasket(prev => !prev);
-        setToggleActive(prev => !prev);
-        setShowCatalog(false);
-    } 
-
-    const showCatalogHandler = () => {
-        setShowCatalog(prev => !prev);
-        setToggleActive(prev => !prev);
-    }    
+    const { toggleMenu, toggleShowCatalog, toggleShowBasket } = props;
 
     return (
         <header className="header">
@@ -26,7 +16,7 @@ const Header = (props) => {
                 <img src={ BtnMenu } alt="" />
             </div>
             <Logo type="header"/>
-            <button className="catalog" onClick={ () => showCatalogHandler() }>
+            <button className="catalog" onClick={ toggleShowCatalog }>
                 <CatalogIcon type="header"/>
                 <div>
                     <p className="catalog__name">Каталог</p>
@@ -42,7 +32,7 @@ const Header = (props) => {
             <div className="header__offers">
                 <img src={ OffersImg } alt="" />
             </div>
-            <div className="header__basket" onClick={ () => showBasketHandler() }>
+            <div className="header__basket" onClick={ toggleShowBasket }>
                 <img src={ BasketImg } alt="" />
             </div>
         </header>
